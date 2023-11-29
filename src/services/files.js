@@ -5,14 +5,14 @@ import toolboxApi from '../configs/toolbox-api.js'
 const parseFile = async ({ file, data }) => {
   let lines = await csvtojson({
     ignoreEmpty: true,
-    ignoreColumns: /file/,
+    ignoreColumns: /file/
   }).fromString(data)
 
   lines = lines.filter((line) => Object.keys(line).length === 3)
 
   return {
     file,
-    lines,
+    lines
   }
 }
 

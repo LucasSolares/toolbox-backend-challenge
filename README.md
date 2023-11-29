@@ -77,13 +77,5 @@ npm run start
 
 ---
 
-### Optional (If you want to run tests)
-
-This code have some unit testings implemented if you want to run them please run the command.
-
-```
-npm run test
-```
-
 **_IMPORTANT NOTE_**
 The project will be running locally in the `localhost` so to access any endpoint you will be able using the url `http://localhost:4000/`

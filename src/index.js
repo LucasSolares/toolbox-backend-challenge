@@ -1,10 +1,13 @@
 import express from 'express'
+import cors from 'cors'
 
 import configRouters from './routes/index.js'
 
 const bootstrap = () => {
   try {
     const app = express()
+
+    app.use(cors())
 
     configRouters(app)
 
